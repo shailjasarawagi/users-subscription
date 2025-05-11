@@ -1,0 +1,36 @@
+/* Import all component styles */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@import "./styles/global.css";
+
+
+
+/* Base styles */
+:root {
+  --primary-color: #3a6ea5;
+  --secondary-color: #004e98;
+  --accent-color: #ff6b6b;
+  --background-color: #f5f7fa;
+  --card-background: #ffffff;
+  --text-color: #333333;
+  --text-light: #666666;
+  --border-color: #e1e5eb;
+  --success-color: #28a745;
+  --warning-color: #ffc107;
+  --danger-color: #dc3545;
+  --shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+}
+
+
+.app {
+  /* max-width: 1400px; */
+ display:flex;
+width:100%
+}
+

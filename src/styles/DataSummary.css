@@ -1,0 +1,60 @@
+.data-summary {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  transition: var(--transition);
+}
+
+.data-summary:hover {
+  box-shadow: var(--shadow-lg);
+}
+
+.summary-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.summary-card {
+  background-color: #f9fafb;
+  padding: 20px;
+  text-align: center;
+  transition: var(--transition);
+  border: 1px solid var(--border-color);
+}
+
+.summary-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+}
+
+.summary-card h3 {
+  font-size: 0.875rem;
+  color: var(--text-light);
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.summary-value {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.summary-percentage {
+  font-size: 0.875rem;
+  color: var(--text-light);
+  margin-top: 4px;
+}
+.package {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  width: 100%;
+}
+.package-distribution {
+  background-color: var(--card-background);
+  padding: 10px;
+  width: 100%;
+}

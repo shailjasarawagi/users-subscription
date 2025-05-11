@@ -1,0 +1,202 @@
+.filter-bar {
+    background-color: var(--card-background);
+    border-radius: var(--radius);
+    padding: 20px;
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    transition: var(--transition);
+    width:100%
+  }
+  
+  .filter-bar:hover {
+    box-shadow: var(--shadow-lg);
+  }
+  
+  .filter-section {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+   
+  }
+  
+  .search-container {
+    position: relative;
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  .search-input {
+    width: 100%;
+    padding: 10px 16px;
+    padding-right: 36px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    font-size: 0.875rem;
+    transition: var(--transition);
+    background-color: #f9fafb;
+  }
+  
+  .search-input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.2);
+  }
+  
+  .clear-search {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 1.25rem;
+    color: var(--text-light);
+    cursor: pointer;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+  
+  .clear-search:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    color: var(--text-color);
+  }
+  
+  .filter-select {
+    padding: 10px 16px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    background-color: #f9fafb;
+    font-size: 0.875rem;
+    min-width: 150px;
+    transition: var(--transition);
+    cursor: pointer;
+  }
+  
+  .filter-select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.2);
+  }
+  
+  .reset-button {
+    padding: 10px 16px;
+    background-color: transparent;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    font-size: 0.875rem;
+    transition: var(--transition);
+    font-weight: 500;
+    
+  }
+  
+  .reset-button:hover {
+    background-color: #f3f4f6;
+    border-color: #d1d5db;
+  }
+  
+  /* Country dropdown styles */
+  .country-dropdown-container {
+    position: relative;
+    min-width: 150px;
+  }
+  
+  .country-dropdown-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 16px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    background-color: #f9fafb;
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: var(--transition);
+  }
+  
+  .country-dropdown-header:hover {
+    border-color: var(--primary-color);
+  }
+  
+  .dropdown-arrow {
+    font-size: 0.75rem;
+    margin-left: 8px;
+  }
+  
+  .country-dropdown-content {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    max-height: 300px;
+    overflow-y: auto;
+    background-color: white;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    z-index: 10;
+    margin-top: 4px;
+    box-shadow: var(--shadow);
+  }
+  
+  .country-search-input {
+    width: 100%;
+    padding: 8px 12px;
+    border: none;
+    border-bottom: 1px solid var(--border-color);
+    font-size: 0.875rem;
+  }
+  
+  .country-search-input:focus {
+    outline: none;
+    background-color: #f9fafb;
+  }
+  
+  .country-options {
+    max-height: 250px;
+    overflow-y: auto;
+  }
+  
+  .country-option {
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 0.875rem;
+    transition: background-color 0.1s;
+  }
+  
+  .country-option:hover {
+    background-color: #f9fafb;
+  }
+  
+  .country-option.selected {
+    background-color: rgba(79, 70, 229, 0.1);
+    color: var(--primary-color);
+    font-weight: 500;
+  }
+  
+  .no-countries {
+    padding: 12px;
+    text-align: center;
+    color: var(--text-light);
+    font-style: italic;
+    font-size: 0.875rem;
+  }
+  
+  @media (max-width: 576px) {
+    .filter-section {
+      flex-direction: column;
+    }
+  
+    .search-input,
+    .filter-select,
+    .country-dropdown-container {
+      width: 100%;
+    }
+  }
+  
