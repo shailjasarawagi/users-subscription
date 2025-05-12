@@ -1,54 +1,51 @@
-# React + TypeScript + Vite
+# User Subscription Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The Subscribers Dashboard is a React-based application designed to manage and visualize subscriber data effectively.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **User List**: Displays a table of subscribers with columns for Name, Email.
+- **User Details**: A View Details button for each user enables access to detailed subscription information.
+- **Filter**: Provides a dropdown to filter by subscription type with search.
+- **Data Summary**: Visual representation of the number of subscribers for each subscription type using a bar chart and pie chart.
 
-## Expanding the ESLint configuration
+## Technology Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Node.js**: v22.12.0
+- **vite**: v6.3.5
+- **TypeScript**: For type safety and better development experience.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Packages Installed
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- **lucide-react**: Used for icons throughout the application.
+- **recharts**: Used for displaying charts (Pie Chart and Bar Graph).
+- **react-router-dom**: Used for routing.
+- **react-window**: Used to virtualized list.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## How to Run the Project
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/shailjasarawagi/users-subscription.git
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd users-subscription
+   ```
+
+3. Install the dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Run the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+5. Open [http://localhost:5173](http://localhost:5173) with your browser to see the result.

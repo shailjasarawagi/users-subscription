@@ -61,13 +61,3 @@
   font-style: italic;
 }
 
-.no-selection {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 300px;
-  color: var(--text-light);
-  font-style: italic;
-  text-align: center;
-  padding: 0 20px;
-}
