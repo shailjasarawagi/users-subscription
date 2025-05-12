@@ -10,9 +10,6 @@ export const formatDate = (dateString: string | number): string => {
     if (isNaN(date.getTime())) {
       return `Invalid date: ${dateString}`;
     }
-
-    //   const readableDate = date.toISOString().replace('T', ' ').split('.')[0];
-
     return new Intl.DateTimeFormat("en-US", {
       year: "numeric",
       month: "short",
